@@ -13,9 +13,12 @@
         =image_tag 'logo.png', class: :logo
         %nav
           %ul
-            %li Home
-            %li Shop
-            %li Technology
+            %li
+              %a{href: root_url} Home
+            %li
+              %a{href: shop_url} Shop
+            %li
+              %a{href: technology_url} Technology
             %li Reviews
             %li My account
             %div#shopping
