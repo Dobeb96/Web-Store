@@ -8,4 +8,20 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = yield
+    #page
+      %header
+        =image_tag 'logo.png', class: :logo
+        %nav
+          %ul
+            %li Home
+            %li Shop
+            %li Technology
+            %li Reviews
+            %li My account
+            %div#shopping
+              -# =image_tag 'cart.svg', id: :cart
+              %li#cart 0 pts.
+              %li Checkout >
+      = yield
+      %footer
+        %p Here goes footer
