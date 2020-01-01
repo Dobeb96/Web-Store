@@ -9,8 +9,12 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     #page
+      #global-popup
+        Hey, we have
+        %b Free global shipping
+        For all orders!
       %header
-        =image_tag 'logo.png', class: :logo
+        =image_tag 'logo.png', id: :logo
         %nav
           %ul
             %li
@@ -23,7 +27,7 @@
             %li My account
             %div#shopping
               -# =image_tag 'cart.svg', id: :cart
-              %li#cart 0 pts.
+              %li#cart-before 0 pts.
               %li Checkout >
       = yield
       %footer

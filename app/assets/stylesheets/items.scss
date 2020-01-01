@@ -1,3 +1,17 @@
 // Place all the styles related to the items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+#items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .item {
+    box-shadow: 2px 2px #333;
+    margin: 1em;
+    img {
+      height: 500px;
+      width: 300px;
+    }
+  }
+}
