@@ -1,7 +1,8 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title Store
     = csrf_meta_tags
     = csp_meta_tag
@@ -13,22 +14,37 @@
         Hey, we have
         %b Free global shipping
         For all orders!
+      -# Header
       %header
+        / Pagination
+        / Adding to cart and storing as a cookie
+        / Login
+        / Additional:
+        / Checkout page
+        / Reviews
         =image_tag 'logo.png', id: :logo
         %nav
           %ul
-            %li
-              %a{href: root_url} Home
-            %li
-              %a{href: shop_url} Shop
-            %li
-              %a{href: technology_url} Technology
-            %li Reviews
-            %li My account
+            = render 'partials/navigation'
             %div#shopping
-              -# =image_tag 'cart.svg', id: :cart
               %li#cart-before 0 pts.
               %li Checkout >
+      -# Main page content
       = yield
+      -# Footer
       %footer
-        %p Here goes footer
+        #footer-nav
+          %ul
+            = render 'partials/navigation'
+            %br
+            %li Shipping & Returns
+            %li Terms of Service
+          #store-info
+            =image_tag 'logo.png', id: :logo
+            %br
+            This store sells goods for customers. Note that we have free world-wide delivery, and we are the best!
+            %br
+            %br
+            %span.uppercase Contact information:
+            %br
+            This is a good place to insert contact info
