@@ -12,7 +12,7 @@ $accent-primary: #fe9801;
   font-family: $font-secondary;
   .item {
     cursor: pointer;
-    box-shadow: 4px 6px 10px #666;
+    box-shadow: 4px 6px 10px #888;
     margin: 0 1em 1em;
     text-align: center;
   } .name {
@@ -24,8 +24,8 @@ $accent-primary: #fe9801;
     line-height: 1.4em;
   } img {
     margin: 0;
-    width: 380px;
-    height: 540px;
+    width: 360px;
+    height: 520px;
   } .add-to-cart {
     cursor: pointer;
     color: white;
@@ -37,3 +37,18 @@ $accent-primary: #fe9801;
     background-color: darken($accent-primary, 5%)
   }
 }
+
+// PAGINATION SECTION
+.pagination {
+  margin: 2em;
+  text-align: center;
+  a, .current {
+    font-family: $font-primary;
+    padding: .5em;
+  } .current {
+    color: $accent-primary;
+  } .first a, .last a, .prev a, .next a {
+    margin: 0 .5px;
+  }
+}
+// END OF PAGINATION SECTION

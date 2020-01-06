@@ -1,3 +1,4 @@
+%p.info= @items_display_range
 #items
   - @items.each do |item|
     .item
@@ -5,3 +6,5 @@
       %h4.name= item.name
       .float-left.price= price_with_currency(item.price)
       .float-right.add-to-cart + Add to cart
+%p.info= @items_display_range
+= paginate @items
