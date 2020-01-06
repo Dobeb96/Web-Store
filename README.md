@@ -1,24 +1,15 @@
-# README
+# Still in development
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Current build can be seen here:
 
-Things you may want to cover:
+https://evening-castle-28991.herokuapp.com/
 
-* Ruby version
+# Technology stack
 
-* System dependencies
+```ruby
+ruby on rails with kaminari, devise, HAML, SCSS
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Assets
+_Random pictures from Lorem Picsum:_
+https://picsum.photos/
