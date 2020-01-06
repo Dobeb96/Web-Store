@@ -2,8 +2,8 @@
 
 $font-primary: 'Righteous', cursive;
 $font-secondary: serif;
+$accent-primary: #fe9801;
 $background-primary: #fdfdfd;
-// $page-width: 1024px;
 $page-width: 100%;
 
 // NAVIGATION SECTION
@@ -38,7 +38,7 @@ header {
     * {
       height: 1em;
       padding: .8em;
-      background-color: #f6da63;
+      background-color: $accent-primary;
     } :first-child {
       border-right: 1px dotted white;
     } :last-child {

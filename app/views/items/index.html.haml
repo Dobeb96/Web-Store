@@ -1,9 +1,7 @@
-%h1 Shop here
-
 #items
   - @items.each do |item|
     .item
       %img{src: item.images.first.url}
-      %p= item.name
-      .float-left= price_with_currency(item.price)
-      .float-right + Add to cart
+      %h4.name= item.name
+      .float-left.price= price_with_currency(item.price)
+      .float-right.add-to-cart + Add to cart
